@@ -8,6 +8,9 @@ body {
     margin: 0;
     padding: 0;
 }
+.row{
+    margin: 0;
+}
 .bgc{
     background-color: grey;
 }
@@ -60,40 +63,38 @@ a img.img-size{
 }
 
 #home-page-container {
-    padding-left: 100px;
-    margin-top: 30%; 
     background-color: #F7F9EB; 
     padding-bottom: 9em; 
     text-align: center;
 }
 .table-cart td{
-    width:60%;
+    width:100%;
 }
 
-.jambotron{
-border: 1px solid #fff; 
-padding: 3em;
+.jumbotron {
+    height: 100vh;
+    min-height: 90vh;
+    margin-bottom: 0;
+}
+ .jumbotron1{
+   height: 35em;
+    background-color:  transparent;
+border: 1px solid red; 
+padding: 5em;
 text-align: center; 
-margin-top: 15em; 
+margin-top: 10em;
 color: #5365E0;
-
-}
-.p-jambotron1{
-font-size: 2em; 
 }
 
-.p-jambotron2{
-font-size: 3.5em;  
+.jumbotron p{
+font-size: 50px; 
+font-weight: 400;
 }
 
-.p-jambotron3{
-font-size: 1.5em; 
-color: #fff; 
-}
 
-.p-jambotron{
- font-weight: bold;
- text-shadow: 1px 2px 8px #000;    
+.jumbotron p.p-jumbotron3{
+font-size: 3.5em; 
+color:black; 
 }
 
 .col-flex{
@@ -178,11 +179,11 @@ caption p {
     text-align: center;
     letter-spacing: 0.03rem;
 }
-h2, .h2{
-font-weight: 500;
-margin: 1em 6em;
+.h2{
+ font-weight: 500;
+ margin: 0.5em 0.6em;
  letter-spacing: 0.2rem;
- font-size: 60px;
+ font-size: 90px;
 }
 h5.h5{
 font-weight: 300;
@@ -198,7 +199,7 @@ a i.fa{
 p.p{
     color: 	#21190E;
     font-size: 15px;
-    margin-right:50px;
+    /* margin-right:50px; */
 }
 .p_subhead{
     margin-top: 1.5em;
@@ -208,9 +209,9 @@ p.p{
     letter-spacing: 1.2rem;
 }
 
-.gap_section{
-    margin: 100px 70px;
-}
+/* .gap_section{
+    padding: 30px 30px;
+} */
 
 .wrapper {
     max-width: 1210px;
@@ -276,4 +277,40 @@ footer {
 } 
 .footer-row{
     margin-top: 0.9em;
+}
+@media only screen and (max-width: 600px) {
+    .gap_section{
+        margin: 30px 0;
+    }
+    .p_subhead{
+        font-size: 25px;
+        letter-spacing: 0.5rem;
+    }
+    .jumbotron p.p-jumbotron3{
+font-size: 1.5em; 
+color:black; 
+}
+.jumbotron p{
+font-size: 30px; 
+font-weight: 300;
+}
+.h2{
+font-weight: 300;
+ font-size: 30px;
+}
+ .jumbotron1{
+   height: 23em;
+    background-color:  transparent;
+border: 3px solid red; 
+padding: 3em;
+text-align: center; 
+margin: 10em 2em 0; 
+color: #5365E0;
+}
+}
+/* .main-jumbo {
+    background: url(/static/img/home_page.jpg) left top/cover no-repeat;
+} */
+.main-jumbo {
+    background: url(/static/img/spa-5.jpg) left top/cover no-repeat;
 }
