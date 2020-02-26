@@ -13,19 +13,19 @@ def cart_contents(request):
     total = 0
     product_count = 0
 
-    for id, quantity_size in cart.items():
-        if isinstance(quantity_size, int):
+    for id, quantity in cart.items():
+        if isinstance(quantity, int):
             product = get_object_or_404(Product, pk=id)
-            quantity = quantity_size
+            quantity = quantity
             total += quantity * product.price
             product_count += quantity
             cart_items.append({'id': id, 'quantity': quantity, 'product': product})
         else:
             product = get_object_or_404(Product, pk=id)
-            quantity = quantity_size[0]
-            size = quantity_size[1]
+            quantity = quantity[0]
+            
             total += quantity * product.price
             product_count += quantity
-            cart_items.append({'id': id, 'quantity': quantity, 'size': size, 'product': product})
+            cart_items.append({'id': id, 'quantity': quantity, 'product': product})
     
     return {'cart_items': cart_items, 'total': total, 'product_count': product_count}

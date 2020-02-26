@@ -6,22 +6,15 @@ from .models import Product
 def all_products(request):
     return render(request, "home.html")
 
-def all_jerseys(request):
-    products = Product.objects.filter(category='jersey')
+def all_massage(request):
+    products = Product.objects.filter(category='massage')
     return render(request, "products.html", {"products": products})
 
-def all_shorts(request):
-    products = Product.objects.filter(category='shorts')
+
+def all_packages(request):
+    products = Product.objects.filter(category='packages')
     return render(request, "products.html", {"products": products})
 
-def all_socks(request):
-    products = Product.objects.filter(category='socks')
-    return render(request, "products.html", {"products": products})
-
-def all_base_layers(request):
-    products = Product.objects.filter(category='base_layer')
-    return render(request, "products.html", {"products": products})
-
-def all_footballs(request):
-    products = Product.objects.filter(category='football')
+def all_face(request):
+    products = Product.objects.filter(category='face')
     return render(request, "products.html", {"products": products})

@@ -2,58 +2,111 @@
 
 {% block head_css %}
 <style>
-    body {
-        background-image: url('https://daradona10-milestoneproject4.s3.amazonaws.com/media/images/football.jpg');
-        background-repeat: no-repeat;
-    }
-
-    #bottom-container {
-        padding-bottom: 0;
-    }
+	body {
+		background-image: url(../static/img/home_page.jpg);
+		background-repeat: no-repeat;
+	}
 </style>
 {% endblock %}
 
 {% block home_page %}
+<div class="container-fluid bgc">
+	<div class="row">
+		<div class="col home-page-bg-image-div img-fluid">
 
-<div class="row" style="text-align: center; margin-top: 10em; color: #2fa4e7;">
-    <div class="col-md-4"></div>
-    <div class="col-md-4">
-        <div style="border: 1px solid #fff; padding: 3em;">
-            <p style="font-size: 2em; font-weight: bold; text-shadow: 1px 2px 8px #000;">WELCOME TO</p>
-            <p style="font-size: 3.5em; font-weight: bold; text-shadow: 1px 2px 8px #000;">FOOTBALL WORLD</p>
-            <p style="font-size: 1.5em; color: #fff; text-shadow: 1px 2px 8px #000;">THE HOME OF FOOTBALL EQUIPMENT</p>
-        </div>
-    </div>
-    <div class="col-md-4"></div>
-</div>
-
-<div id="home-page-cards-container">
-<div class="container-fluid navigation-container">
-		<div class="row">
-			<div class="col-12">
-				<h2 class="headings text-center">The Best Online Football Equipment Store</h2>	
-			</div>
 		</div>
-	<section class="container-fluid navigation-container" style="text-align: center;">
-		<div class="row">
-            <div class="col-md-1 col-sm-12">
-            </div>
-            <div class="col-md-2 col-sm-12">
-                <a href="/products/jerseys/"><div class="card home-page-cards">JERSEYS</div></a>
-            </div>
-            <div class="col-md-2 col-sm-12">
-                <a href="/products/shorts/"><div class="card home-page-cards">SHORTS</div></a>
-            </div>
-            <div class="col-md-2 col-sm-12">
-                <a href="/products/socks/"><div class="card home-page-cards">SOCKS</div></a>
-            </div>
-            <div class="col-md-2 col-sm-12">
-                <a href="/products/base_layers/"><div class="card home-page-cards">BASE LAYERS</div></a>
-            </div>
-            <div class="col-md-2 col-sm-12">
-                <a href="/products/footballs/"><div class="card home-page-cards">FOOTBALLS</div></a>
-            </div>
-        </div>
-	</section>
+		<div class="row ">
+			<div class="col col-flex">
+				<div class="jambotron col-md-4">
+
+					<p class ="p-jambotron p-jambotron1">WELCOME TO</p>
+					<p class ="p-jambotron p-jambotron2">SPA RESIDENCE</p>
+					<p class ="p-jambotron p-jambotron3">get transported to a
+						magical world of relaxing</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="home-page-container">
+
+			<!-- <div class='wrapper'> -->
+			<div class="row">
+				<div class="col section-header">
+					<h2 class='h2'>Seek Balance at Our Luxury Spa</h2>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-sm-12 col-md-6 gap_section">
+					<h5 class='h5'>WHERE BEATY MEETS RELAXATION</h5>
+					<p class='p'>Visions Spa Salon has been servicing our community and beyond
+						for
+						over 30 years. Established in 1988, Visions Spa Salon has raised the standards for
+						salons and
+						spas
+						through the decades. Our tradition of excellence through diligent education and training
+						has
+						made
+						Visions Spa Salon nationally awarded as one of the premier spa salons in our country.
+					</p>
+				</div>
+
+
+				<div class="col-sm-12 col-md-6 gap_section">
+					<h5 class='h5'>
+						YOUR EVERYDAY RETREAT
+					</h5>
+					<p class='p'>
+						Island Retreat Spa Salon is pleased to serve you. Whether you are searching for a
+						new
+						look or day of pampering, our number one priority is to please you. Come in today
+						and
+						treat yourself to the beauty and relaxation you deserve.
+					</p>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-sm-12 col-md-6 gap_section">
+					<h5 class='h5'>
+						FACE FORWARD TREATMENT
+					</h5>
+					<p class='p'>
+
+						The face is a person's window to the world. Facial skin must therefore be pampered,
+						nurtured and adored. The Spa's menu of facial treatments are designed to ensure
+						guests
+						radiate calm and contentment the moment they step back into the real world again…
+					</p>
+				</div>
+
+
+				<div class="col-sm-12 col-md-6 gap_section">
+					<h5 class='h5'>
+						MASSAGE
+					</h5>
+					<p class='p'>
+
+						Relax and restore inner peace through the power of massage. Whether you are looking
+						for
+						a gentle or deep tissue massage, our range of luxurious massage treatments will
+						ensure
+						your every need is met.
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col section-header">
+					<p class='p_subhead'>From head to toe it’s time to spoil yourself</p>
+
+				</div>
+			</div>
+
+	</div>
 </div>
 {% endblock %}
