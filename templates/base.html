@@ -11,28 +11,23 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="{% static 'css/custom.css' %}">
 	<link rel="stylesheet" href="/static/css/custom.css">
+   
 
-
-	{% block head_css %}
-	{% endblock head_css %}
-
-	{% block head_js %}
-	{% endblock head_js %}
 </head>
 
 <body>
 
-	{% block extra_js %}
-	{% endblock extra_js %}
+	<!-- {% block extra_js %}
+	{% endblock extra_js %} -->
 	{% block home_page %} {% endblock home_page %}
 
 	<!-- Navbar -->
+    <div class="container">
 	<nav class="navbar navbar-masthead navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<a id="app-name" class="navbar-brand img-fluid img-size" href="/">
-					<img src="static/img/island-retreat-logo.jpg" class="logo-img" alt="Island Retreat"/> Island Retreat</a>
-			</div>
+			
+						<a href="#" id="app-name" class="navbar-brand img-fluid img-size">
+							<img src="static/img/island-retreat-logo.jpg" class="nav-item logo-img" alt="Island Retreat"/> Island Retreat</a>
+	
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -84,27 +79,32 @@
 	</div>
 	{% endif %}
 
-	<div class="container" id="bottom-container">
+	<!--  id="bottom-container"> -->
+	<div class="container">
 		{% block content %} {% endblock %}
 	</div>
 
 	<!-- Footer -->
 	<div class="footer" id="my-footer">
-		<div class="row footer-row mt-2">
-			<div class="col-md-4" id="footer-social-icons">
+		<div class="row footer-row">
+			<div class="col-sm-12 col-md-4" id="footer-social-icons">
 				<div class="footer_social"><b>SOCIAL MEDIA</b></div>
 				<div>
-					<a href="https://facebook.com" target="_blank" class="footer_social-a"><i class="fa fa-facebook-square"></i></a>
-					<a href="https://twitter.com" target="_blank" class="footer_social-a"><i class="fa fa-twitter-square"></i></a>
-					<a href="https://instagram.com" target="_blank"  class="footer_social-a"><i class="fa fa-instagram"></i></a>
-					<a href="https://youtube.com" target="_blank" class="footer_social-a"><i class="fa fa-youtube-square"></i></a>
+					<a href="https://facebook.com" target="_blank"
+						class="footer_social-a"><i class="fa fa-facebook-square"></i></a>
+					<a href="https://twitter.com" target="_blank"
+						class="footer_social-a"><i class="fa fa-twitter-square"></i></a>
+					<a href="https://instagram.com" target="_blank"
+						class="footer_social-a"><i class="fa fa-instagram"></i></a>
+					<a href="https://youtube.com" target="_blank"
+						class="footer_social-a"><i class="fa fa-youtube-square"></i></a>
 				</div>
 			</div>
-			<div class="footer_align col-md-4 footer_col1">
+			<div class="footer_align col-sm-12 col-md-4 footer_col1">
 				<p class=>This site is created for education purposes only.</p>
 			</div>
-			<div class="col-md-4footer_col2">
-				<div>This site has been created by Ganna Sachkova</div>
+			<div class="col-sm-12 col-md-4 footer_col2">
+				<p>This site has been created by Ganna Sachkova</p>
 			</div>
 		</div>
 	</div>

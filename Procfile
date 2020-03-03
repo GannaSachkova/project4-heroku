@@ -1,1 +1,1 @@
-web: gunicorn project4-heroku.wsgi:application
+web: gunicorn project4_heroku.wsgi:application

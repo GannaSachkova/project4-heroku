@@ -26,6 +26,9 @@ h2.h2{
     margin: 0;
     padding: 0;
 }
+.main-jumbo {
+    background: url(/static/img/spa-5.jpg) left top/cover no-repeat;
+}
 .navbar.navbar-default{
     border-bottom: 5px solid #81776E;
     background-color:  #81776E;
@@ -50,6 +53,7 @@ h2.h2{
     float:left;
     width:65px;
     padding-right: 10px;
+    padding-left: 5px;
     margin:0;
  }
  form.base_form{
@@ -75,25 +79,17 @@ a i.fa{
      background-color: transparent;
 }
 
-.my-nav-item:hover {
-    background-color: 		#AEACB6;
+.my-nav-item:hover, .my-nav-item:active,.my-nav-item:focus {
+    background-color: #AEACB6;
 }
 
 .my-nav-item {
     font-size: 1.2em;
 }
 
-/* #app-name{
-    font-weight: bold;
-    font-weight: 2em;
-} */
-
 a img.img-size{
    margin-bottom: 5px;
 } 
-/* #bottom-container{
-    padding-bottom: 10em;
-} */
 
 #home-page-container {
     background-color: #F7F9EB; 
@@ -109,13 +105,14 @@ a img.img-size{
     margin-bottom: 0;
 }
  .jumbotron1{
-   height: 40em;
+   height: 30em;
     background-color:  transparent;
-border: 1px solid red; 
+/* border: 1px solid red;  */
+box-shadow: 10px 20px 20px 20px rgba(45, 45, 41, 0.5);
 padding: 5em;
 text-align: center; 
 margin-top: 10em;
-color: #5365E0;
+color: #B12F4A;
 }
 
 .jumbotron p{
@@ -125,7 +122,8 @@ font-weight: 400;
 
 
 .jumbotron p.p-jumbotron3{
-font-size: 3.5em; 
+    margin-top: 70px;
+font-size: 2em; 
 color:black; 
 }
 
@@ -322,13 +320,19 @@ h5.h5{
 }
 
  .jumbotron1{
-   height: 25em;
+   height: 23em;
     background-color:  transparent;
 box-shadow: 10px 20px 20px rgba(45, 45, 41, 1);
 padding: 3em;
 text-align: center; 
-margin: 10em 2em 0; 
-color: #5365E0;
+margin: 3em 2em 0; 
+
+}
+.jumbotron p.p-jumbotron3 {
+    margin-top: 30px;
+}
+.jumbotron p {
+    font-size: 25px;
 }
 #my-footer { 
     height: 160px;
@@ -341,15 +345,14 @@ color: #5365E0;
    
 }
 }
-@media only screen and (min-width: 1000px) {
-    /* .container {
-    padding-left: 270px; */
-   
+@media (min-width: 768px){
+.navbar-right {
+    margin-right: 15px;
+}
 }
 
-/* .main-jumbo {
-    background: url(/static/img/home_page.jpg) left top/cover no-repeat;
-} */
-.main-jumbo {
-    background: url(/static/img/spa-5.jpg) left top/cover no-repeat;
+
+@media only screen and (min-width: 1024px) {
+
+   
 }
