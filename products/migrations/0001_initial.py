@@ -20,7 +20,6 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(default='', max_length=254)),
                 ('description', models.TextField()),
                 ('price', models.DecimalField(decimal_places=2, max_digits=6)),
-                ('rating', models.IntegerField()),
                 ('category', models.CharField(default='', max_length=100)),
                 ('image', models.ImageField(upload_to='images')),
             ],
