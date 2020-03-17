@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/GannaSachkova/project4-heroku.svg?branch=master)](https://travis-ci.com/GannaSachkova/project4-heroku)
 # Milestone Project 4 – Full Stack Development
 
 **Ecommerce & Blog Web Application with User Authentication and Stripe Payments**
@@ -22,7 +23,7 @@ This website consists of the following pages:
 - [Technologies used](#technologies-used)
 - [Testing](#testing)
 - [Deployment](#deployment)
-- [Credits](#credits0
+- [Credits](#credits)
 
 <a name="demo"/>
 
