@@ -3,7 +3,7 @@ image:
 tasks:
  - init: . ${GITPOD_REPO_ROOT}/.theia/init_tasks.sh  
  - name: alias 
-   command: echo 'alias run="python3 /workspace/project4-heroku/manage.py runserver 0.0.0.0:8080"' >> ~/.bashrc && source ~/.bashrc
+   command: echo 'alias run="python3 /workspace/project4-heroku/manage.py runserver 0.0.0.0:8080"' >> ~/.bashrc&&source ~/.bashrc
   
 vscode:
   extensions:
