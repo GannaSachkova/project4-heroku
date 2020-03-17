@@ -1,15 +1,18 @@
 # Milestone Project 4 – Full Stack Development
 
 **Ecommerce & Blog Web Application with User Authentication and Stripe Payments**
-
-This Web App was built as a final project for the Code Institute's classroom bootcamp. It is a fictional Ecommerce site built with Python's Django framework
+This Web App was built as a final project for the Code Institute's classroom bootcamp. It is a fictional ecommerce site built with Python's Django framework
 
 This website consists of the following pages:
 
-1. Home - it is start page of the website
-2. Add Recipe - page contains form with fields
-3. Find Recipe - page contains form with  2 fields and button
-4. All Recipes -  page contains card list with the recipes that were apploded to the database
+1. Home - it is the start page of the website
+2. All Body Massage - page contains information about services
+3. Face Massage - page contains information about services
+4. Packages -  page contains information about services
+5. Register - page contains register form
+6. Log In - page contains a login form
+7. Cart - page contains items the user would like to buy
+8. Search - page contains search panel
 
 ## Table of Contents
 - [Demo](#demo)
@@ -34,9 +37,9 @@ This project created as my fourth and last Milestone project at Code Institute. 
 
 
 My goal in the design was to make it as easy as possible to access information on the site while striving for a minimalist design. So the website does this in a simple intuitive way with easy navigation, minimal fields. This application is user-friendly and interactive.
-Details of the UX design is available in the wireframes folder. This folder contains web page excise pages of the application.
+Details of the UX design is available in the wireframes folder. This folder contains web page sketch pages of the application.
 
-The four dominant color on the page is the grey, brown, green and the black letters.
+The four dominant color on the page is grey, brown, green, orange and black letters.
 
 Apps
 
@@ -60,26 +63,23 @@ Search
 This app allows users to search the website
 
 
-<a name=" wireframes "/>
+<a name="wireframes"/>
 
-##Wireframes
-…..
+## Wireframes
 
-<a name=" features"/>
+The following [wireframe](https://github.com/GannaSachkova/project4-heroku/tree/master/wireframes) sketches were created using [Moqups](https://moqups.com/) to design the project layout options for desktop displays.
+
+<a name="features"/>
 
 ## Features
 #### Existing Features 
 •	User is able to login or register by clicking "login/register" on the navbar and filling out the form.
-•	User is able to view all services by clicking the necessary button on the navbar.
-•	User is able to buy a product by clicking "add to cart" and checking out.
-•	 Profile  allows the user to view their details when signed into the app. 
-Admin can can add new product/blogpost/create feed
-Store the static and media files on AWS
-The user can add product in the cart
-
+•	The profile allows the user to view their details when signed into the app
 •	Navbar allows users to quickly move around the app 
+•	User is able to view all services by clicking the necessary button on the navbar
+•	The user is able to put a product by clicking "add to cart" and checking out.
+•	User is able to buy a product by clicking "Checkout"
 •	Images - Django ImageField attributes are used to store images in models. Images are hosted on AWS3 Bucket to allow hosting on cloud servers. 
-•	Search Box makes it possible to filter search base on product name or category. Search can only be seen when user is authenticated.
 
 ####  Future Features 
 •	**Reviews** - Try to allow user leave a review on purchased product
@@ -100,8 +100,7 @@ The website is designed using following technologies:
 -	[Font Awesome](https://fontawesome.com/v4.7.0/) - Font Awesome bars icon for menu on mobile devices was used in the project, as well as icons for social media links;
 -	[jQuery](https://code.jquery.com/jquery-3.4.1.min.js) - is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. ### Frameworks & Extensions
 -	[Django]( https://www.djangoproject.com/) – Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. 
-
--	[Bootstrap]( https://getbootstrap.com/ – Bootstrap is a web framework that focuses on simplifying the development of informative web pages
+-	[Bootstrap](https://getbootstrap.com/ – Bootstrap is a web framework that focuses on simplifying the development of informative web pages
 
 
 
@@ -119,24 +118,26 @@ The website is designed using following technologies:
 
 -	[Moqups](https://moqups.com/) - Online tool that was used to create wireframes.AWS S3 – is a service offered by Amazon Web Services that provides object storage through a web service interface.
 
--	  [Travis-CI](https://travis-ci.org/) – Travis CI is a hosted continuous integration service used to build and test software projects hosted at GitHub.  
+-	[Travis-CI](https://travis-ci.org/) – Travis CI is a hosted continuous integration service used to build and test software projects hosted at GitHub.  
 
-<a name="testing "/>
+<a name="testing"/>
 
 ### Testing
-####Running the tests
+#### Running the tests
 Automated tests can be viewed in the tests.py file within the separate Apps. To run the tests, in your terminal navigate to the folder with your project in, activate your virtual environment and type:
 $ python manage.py test <app name>
 
 #### Resources & Tools Used for Testing
 **HTML**  - [W3 HTML Validator](https://validator.w3.org/)
+
 **CSS**   - [W3 CSS Validator](https://jigsaw.w3.org/css-validator/)
+
 **JSHint** - [JSHint](https://jshint.com/) - JSHint is a community-driven tool that detects errors and potential problems in JavaScript code.
+
 **online Beautifier** - [freeformatter.com](https://www.freeformatter.com) and [CSS Formatter](https://www.cleancss.com)
+
 **Responsinator** - [Responsinator](https://www.responsinator.com/) - to check the responsiveness of my site on various devices.
 
-The application was build using Google Chrome.
-Also, test driven development methods were used during development. Django in-built unit-test features were used to perform basic test on various views and classes of the application. Defensive design was incorporated on pages where no results were found, prompting an error message for empty result sets.
 In addition, this project was tested for responsiveness using the Chrome Developer Tools.
 
 
@@ -171,6 +172,8 @@ To allow git to push to heroku the command git push heroku master must be called
 #### Databases / Static Files
 When running locally, SQLite database was used & static and media files were stored locally. When deploying, Heroku Postgres was used as the server database & an Amazon S3 bucket was set up to host all the static files. settings.py file was amended for the database & static files to point to the online resources.
 
+#### GitPod 
+I added alias to "gitpod.yml": alias run="python3 /workspace/project4-heroku/manage.py runserver 0.0.0.0:8080"' >> ~/.bashrc&&source ~/.bashrc . It  allows to run  the project  easely from command line.
 
 <a name="credits "/>
 
