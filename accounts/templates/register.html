@@ -1,13 +1,10 @@
-{% extends "base.html" %}
-{% load bootstrap_tags %}
-{% block content %}
-    <form method="post" action="{% url 'register' %}" class="accountform">
-        <fieldset class="form-group">
-            <legend>Create a new account</legend>
-            <p class="register">Already got an account? <a  class="register-a" href="{% url 'login' %}"><strong>Sign In</strong></a></p>
-            {% csrf_token %}
-            {{  user_form | as_bootstrap }}
-            <button type="submit" class="btn btn-primary btn-primary-green">Create account</button>
-        </fieldset>
-    </form>
+{% extends "base.html" %} {% load bootstrap_tags %} {% block content %}
+<form method="post" action="{% url 'register' %}" class="accountform">
+    <fieldset class="form-group">
+        <legend>Create a new account</legend>
+        <p class="register">Already got an account? <a class="register-a" href="{% url 'login' %}"><strong>Sign In</strong></a></p>
+        {% csrf_token %} {{ user_form | as_bootstrap }}
+        <button type="submit" class="btn btn-primary btn-primary-green">Create account</button>
+    </fieldset>
+</form>
 {% endblock %}
