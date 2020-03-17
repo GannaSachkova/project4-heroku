@@ -1,6 +1,8 @@
 from django.db import models
 
-# Create your models here.
+# The models.
+
+# The default is empty. This does not add a default product to the database.
 class Product(models.Model):
     name = models.CharField(max_length=254, default='')
     description = models.TextField()
@@ -11,5 +13,6 @@ class Product(models.Model):
 
 
 
+    # What will be returned here is a string with the name.
     def __str__(self):
         return self.name
