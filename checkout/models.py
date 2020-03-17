@@ -3,11 +3,15 @@ from products.models import Product
 
 # Create your models here.
 
+
 class Order(models.Model):
+    """
+    Model to store order information, customer, shipping address, date
+    and return a summary of the users order with the id, date and name.
+    """
     full_name = models.CharField(max_length=50, blank=False)
     phone_number = models.CharField(max_length=20, blank=False)
     country = models.CharField(max_length=40, blank=False)
-    postcode = models.CharField(max_length=40, blank=False)
     town = models.CharField(max_length=40, blank=False)
     street_address1 = models.CharField(max_length=40, blank=False)
     street_address2 = models.CharField(max_length=40, blank=False)
@@ -19,6 +23,11 @@ class Order(models.Model):
 
 
 class OrderLineItem(models.Model):
+    """
+    Model to store the order items, which product is being purchased and the quantity 
+    that was entered by the user. 
+    It returns the quantity of bought products, the name and price of the product.
+    """
     order = models.ForeignKey(Order, null=False)
     product = models.ForeignKey(Product, null=False)
     quantity = models.IntegerField(blank=False)
@@ -26,5 +35,3 @@ class OrderLineItem(models.Model):
     def __str__(self):
         return "{0} {1} @ {2}".format(
             self.quantity, self.product.name, self.product.price)
-
-    
