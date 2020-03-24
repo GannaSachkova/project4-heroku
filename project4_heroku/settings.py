@@ -146,7 +146,7 @@ AWS_S3_OBJECT_PARAMETERS = {
 AWS_STORAGE_BUCKET_NAME = 'anna-django-shop'
 AWS_S3_REGION_NAME = 'eu-west-1'
 AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
-AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
+AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")  
 
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 AWS_DEFAULT_ACL = None
@@ -158,7 +158,7 @@ STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
-    os.path.join(os.path.dirname(__file__),'static'),
+    os.path.join(os.path.dirname(BASE_DIR,'static'),
 )
 
 MEDIAFILES_LOCATION = 'media'
