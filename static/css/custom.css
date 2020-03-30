@@ -247,6 +247,9 @@ body {
      text-decoration: none;
      background-color: #F6F1DD;
 }
+.btn_checkout{
+    margin-bottom: 200px;
+}
  .footer{
      padding-top: 20px;
      padding-bottom: 20px;
