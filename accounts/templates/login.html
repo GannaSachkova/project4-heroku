@@ -1,5 +1,6 @@
-{% extends "base.html" %} {% load bootstrap_tags %} {% block content %}
-<form method="post" action="{% url 'login' %}?next={{ next }}" class="accountform">
+{% extends "base.html" %} {% load static from staticfiles %}<link rel="stylesheet" href="{% static 'css/custom.css' %}"> {% load bootstrap_tags %} {% block content %}
+
+<form method="post" action="{% url 'login' %}?next={{ next }}" class="accountform col-sm-8 col-sm-offset-2">
     <fieldset class="form-group">
         <legend>Login</legend>
         {% csrf_token %} {{ user_form | as_bootstrap }}
