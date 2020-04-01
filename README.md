@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.com/GannaSachkova/project4-heroku.svg?branch=master)](https://travis-ci.com/GannaSachkova/project4-heroku)
 # Milestone Project 4 – Full Stack Development
 
+![demo](https://anna-django-shop.s3-eu-west-1.amazonaws.com/static/img/demo.png)
+
 **Ecommerce & Blog Web Application with User Authentication and Stripe Payments**
 This Web App was built as a final project for the Code Institute's classroom bootcamp. It is a fictional ecommerce site built with Python's Django framework
 
@@ -64,11 +66,13 @@ Search
 This app allows users to search the website
 
 ## Design Choices
-###Colour Scheme
+### Colour Scheme
 I'm a big fan of brown colours, so as you can see it. And I suggested that it is a good reason to use it as the main color because brown color suggests neatness, openness, approachability, and friendliness. Also, it relates well to nature, wholesome food. 
 The main colour was taken off the main page of the website.   A colour palette was then found using [coolors](https://coolors.co/).  There were used 5 main colours.
 
-###Styling
+![color-pallete](https://anna-django-shop.s3-eu-west-1.amazonaws.com/static/img/color-palette.png)
+
+### Styling
 Styling was done on the principle of mobile first. As most Users these day access sites from their phone, this site needed to be friendly for them.
 
 I chose to keep the collapsed menu all the way up till the large screen otherwise the screen seemed too busy and this way it keeps the visual overload to a minimum.
@@ -92,12 +96,19 @@ The following [wireframe](https://github.com/GannaSachkova/project4-heroku/tree/
 
 ####  Future Features 
 Time was gone too fast and unfortunately, there are many more features I would like to include to enhance the appeal and useability of the app.
+
 •	registered users would have the function to access their own orders through profile;
+
 •   a user review section would be a useful feature for new visitors to the site;
+
 •   adding and changing amount Items for order via the items page or on checkout; 
+
 •   add more content for the end-user to see on their Profile page; 
+
 •   email functionality: sending registration emails, sign in with just email;
+
 •   need to create a contact form for visitors to fill in and send an email to the site owner; 
+
 •   need to create the "About Us "page.
 
 
@@ -152,20 +163,7 @@ The website is designed using following technologies:
 
 
 ## Testing
-I conducted testing across different platforms and web browsers in order to make sure the website looked great across each one. I also asked friends and family to test across their own devices and to give me honest opinions and feedback.
-
-Platforms:
-
-* Samsung Galaxy 8
-    * Google Chrome
-    * Firefox
-    * Samsung web browser
-* Ubuntu 18.0
-    * Google Chrome
-    * Firefox
-* Windows 7
-    * Google Chrome
-    * Firefox
+I conducted testing across different platforms and web browsers in order to make sure the website looked great across each one.
 
 ### Browser Testing
 Chrome -The project was developed using Chrome as the serving site. All features were running optimally when tested.
@@ -175,19 +173,15 @@ Firefox - All the features were working.
 ### Device testing
 This was tested on multiple devices, including Iphone, Ipad, Android, tablets and phones. Working as expected on all devices. No issues reported.
 
+### Travis
 Travis was used to scan packages and libraries for bugs and anything that might damage travis or the server, to ensure that that server is safe and free of code that might be dangerous. All tests were passed, see the green build passing button in top of the README file and see pictures below: 
 
 ![Travis](https://anna-django-shop.s3-eu-west-1.amazonaws.com/static/img/travis.png)
 
+### Stripe
 Also checked my Stripe dashboard for succesful payments. See picture below:
 
 ![Stripe](https://anna-django-shop.s3-eu-west-1.amazonaws.com/static/img/stripe.png)
-
-
-#### Running the tests
-Automated tests can be viewed in the tests.py file within the separate Apps. To run the tests, in your terminal navigate to the folder with your project in, activate your virtual environment and type:
-$ [python manage.py test +app name]
-
 
 
 #### Resources & Tools Used for Testing
@@ -269,7 +263,7 @@ This project was deployed to Heroku and uses Heroku for its production environme
 2. Select 'New' > 'Create New App' and fill out the details required then hit 'Create App'.
 3. Select 'Settings' > 'Reveal Config Vars'
     * Enter in the same environment variables that are in step 7 of deploying code locally.
-4. Download the code from the Github repository [here](https://github.com/AnthonyNicklin/newage-auctions)
+4. Download the code from the Github repository [here](https://github.com/GannaSachkova/project4-heroku)
 5. Click on Clone or *download* then *Download ZIP*. This will download the code into a ZIP folder locally on your computer.
 6. Uncompress the ZIP folder.
 7. Open up a terminal or cmd prompt and login into Heroku CLI.
@@ -295,21 +289,30 @@ This project was deployed to Heroku and uses Heroku for its production environme
 To install and set up a PostgreSQL database follow the well document instructions provided by Heroku at [https://devcenter.heroku.com/articles/heroku-postgresql](https://devcenter.heroku.com/articles/heroku-postgresql).
 
 #### GitPod 
-If you wish to run this code through gitpod in CLI you lust need type command "run" because I added alias to "gitpod.yml": alias run="python3 /workspace/project4-heroku/manage.py runserver 0.0.0.0:8080"' >> ~/.bashrc&&source ~/.bashrc . It  allows to run  the project  easely from command line.
+If you wish to run this code through gitpod in CLI you lust need type command "run" because I added alias to "gitpod.yml".  It  allows to run  the project  easely. 
+```
+alias run="python3 /workspace/project4-heroku/manage.py runserver 0.0.0.0:8080"' >> ~/.bashrc&&source ~/.bashrc
+```
+
 
 
 ## Credits
 
 ### Content
 •	The apps products, checkout, cart, and accounts were taken from the [E-commerce Mini Project](https://github.com/Code-Institute-Solutions/PuttingItAllTogether-Ecommerce) and customized where possible to suit my project.
+
 •	Services and pictures for website categories have been sources from [Google](https://www.google.ie/).
+
 •	Wallpaper background obtained from [Google](https://www.google.ie/).
 
+
 ### Contact 
-•	Created by [Ganna Sachkova]( (mailto:dorogaya1810@gmail.com).
+•	Created by [Ganna Sachkova](mailto:dorogaya1810@gmail.com).
+
 
 ### Acknowledgements 
 •	Many thanks to my mentor Maranatha Ilesanmi  for all the support and advice he has given during the course of this project
+
 •	Thanks to my school Code Institute for creating a great Full-Stack Developer Education.
 
 *All materials and content in this project are solely for educational purposes.*
