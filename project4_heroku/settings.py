@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'), '8080-b4b519da-335f-4cb4-9b4a-4cb608c239cf.ws-eu01.gitpod.io', 'project4-heroku.herokuapp.com']
+ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'), '8080-cc287f2a-76f8-4291-a3d3-0ca7de1ec2d7.ws-eu01.gitpod.io', 'project4-heroku.herokuapp.com']
 
 
 # Application definition
